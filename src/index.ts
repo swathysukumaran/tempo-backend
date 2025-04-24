@@ -21,8 +21,10 @@ app.use(cookieParser());
 const client = new SpeechClient();
 const server=http.createServer(app);
 
-server.listen(8081,()=>{
-    console.log('Server is running on http://localhost:8081/');
+const PORT = process.env.PORT || 8081;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
 
 const MONGO_URL="mongodb+srv://swathysukumaran:g4pGjXwj22IlponE@cluster0.95gfw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
