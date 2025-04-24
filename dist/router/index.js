@@ -8,8 +8,7 @@ const authentication_1 = __importDefault(require("./authentication"));
 const AI_1 = __importDefault(require("./AI"));
 const users_1 = __importDefault(require("./users"));
 const tripDetails_1 = __importDefault(require("./tripDetails"));
-const onboarding_1 = __importDefault(require("./onboarding"));
-const preferences_1 = __importDefault(require("./preferences"));
+
 const speechRoutes_1 = __importDefault(require("./speechRoutes"));
 const me_1 = __importDefault(require("./me"));
 const places_1 = __importDefault(require("./places"));
@@ -19,8 +18,8 @@ exports.default = () => {
     (0, AI_1.default)(router);
     (0, users_1.default)(router);
     (0, tripDetails_1.default)(router);
-    (0, preferences_1.default)(router);
-    (0, onboarding_1.default)(router);
+
+
     (0, speechRoutes_1.default)(router);
     (0, me_1.default)(router);
     (0, places_1.default)(router);
